@@ -748,7 +748,7 @@ app.use(async (ctx, next) => {
 app.use(router.routes());
 app.use(router.allowedMethods());
 
-const port = Number(Deno.env.get('PORT') || 8000);
+const port = Number(Deno.env.get('PORT') || 10000);
 console.log(`🚀 服务器运行在 http://0.0.0.0:${port}`);
 console.log(`📚 Enginelabs-2API-V3 Deno 版本 v3.0.0`);
 await app.listen({ port });
